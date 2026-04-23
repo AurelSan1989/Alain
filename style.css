@@ -394,6 +394,7 @@
         font-size: var(--fs-body-md);
         color: var(--color-on-surface-variant);
         display: -webkit-box;
+        line-clamp: 2;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;

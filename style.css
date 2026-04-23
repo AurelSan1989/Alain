@@ -632,7 +632,7 @@
         margin-bottom: 24px;
     }
 
-    /* #ÉTUDES# */
+    /* #ÉTUDES & PARCOURS# */
     .academic-card {
         background-color: var(--color-surface-container-low);
         border: 1px solid var(--color-outline-variant);
@@ -673,4 +673,138 @@
     .item-desc {
         font-size: 16px;
         color: var(--color-on-surface-variant);
+    }
+
+    /* PUBLICATIONS */
+    .ecrivain-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        border-bottom: 2px solid var(--color-primary);
+        padding-bottom: 16px;
+        margin-bottom: 48px;
+    }
+
+    .ecrivain-header_title {
+        font-family: var(--font-display);
+        font-size: 48px;
+        color: var(--color-primary);
+    }
+
+    .badge {
+        font-size: 12px;
+        background-color: var(--color-primary);
+        color: #d1e7b2;
+        padding: 4px 12px;
+        border-radius: 99px;
+        letter-spacing: 0.1em;
+    }
+
+    .ecrivain-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+    .ecrivain-card {
+        background-color: #fff;
+        border: 1px solid #f1f5f9;
+        overflow: hidden;
+        transition: border-color 0.5s ease;
+        padding: 32px;
+    }
+
+    .ecrivain-card:hover {
+        border-color: var(--color-outline-variant);
+        background-color: white;
+    }
+
+    .ecrivain-card .genre {
+        font-size: 14px;
+        color: #8d8d8d;
+        margin-bottom: 8px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    .ecrivain-card h3 {
+        font-family: var(--font-display);
+        font-size: 32px;
+        color: var(--color-primary);
+        margin-bottom: 16px;
+        transition: color 0.3s ease;
+    }
+
+    .ecrivain-card:hover h3 {
+        color: var(--color-secondary);
+    }
+    /* #COMEDIEN# */
+    .comedien-body {
+        border-left: 2px solid rgba(82, 100, 58, 0.2);
+        padding-left: 32px;
+        margin-left: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .comedien-body_item {
+        position: relative;
+    }
+
+    .comedien-dot {
+        position: absolute;
+        left: -41px;
+        top: 6px;
+        width: 16px;
+        height: 16px;
+        background-color: var(--color-secondary);
+        border-radius: 50%;
+    }
+
+    .comedien-dot:nth-child(2) .comedien-dot {
+        background-color: rgba(82, 100, 58, 0.4);
+    }
+
+    .comedien-dot:nth-child(3) .comedien-dot {
+        background-color: rgba(82, 100, 58, 0.2);
+    }
+
+    .comedien-tag {
+        color: var(--color-secondary);
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        margin-bottom: 8px;
+        display: block;
+        padding: 4px 12px;
+        background-color: var(--color-surface-container);
+    }
+
+    .comedien-subtitle {
+        margin-bottom: 8px;
+        font-family: var(--font-display);
+        font-size: 32px;
+        color: var(--color-primary);
+        padding-bottom: 16px;
+        display: inline-block;
+    }
+
+    .comedien-body_item > .item-desc {
+        max-width: 65ch;
+    }
+
+    .comedien-footer {
+        margin-top: 48px;
+        aspect-ratio: 16/9;
+        border-radius: 4px;
+        overflow: hidden;
+        background-color: var(--color-surface-container);
+    }
+
+    .comedien-footer img {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
     }

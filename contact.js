@@ -20,9 +20,11 @@ formContact.addEventListener("submit", function(event) {
         return response.json();
     }) .then(function(data) {
         if (data.success === true) {
-            alert('Votre message a bien été envoyé');
+            let feedbackSuccess = document.querySelector('.success');
+            feedbackSuccess.style.display = "flex";
         } else {
-            alert('Une erreur est survenue, veuillez réessayer');
+            let feedbackError = document.querySelector('.error');
+            feedbackError.style.display = "flex";
         }
     })
 })

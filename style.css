@@ -1152,8 +1152,28 @@
         text-transform: uppercase;
         transition: background-color 0.3s ease;
         display: inline-block;
+        border-radius: var(--radius-lg);
     }
 
     .btn-contact:hover {
         background-color: var(--color-primary);
+    }
+
+    #feedback .success, #feedback .error {
+        color: var(--color-on-primary);
+        max-width: 450px;
+        margin: 0 auto;
+        margin-top: 25px;
+        padding: 10px;
+        text-align: center;
+        display: none;
+        background-color: var(--color-on-primary-fixed-variant);
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--color-on-primary-container);
+        border-radius: var(--radius-lg);
+    }
+
+    #feedback .error {
+        background-color: var(--color-error);
     }

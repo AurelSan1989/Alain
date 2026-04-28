@@ -13,15 +13,45 @@
         <nav>
         <a href="index.html" class="nav-logo">Alain Girodet</a>
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Accueil</a></li>
+            <li><a href="index.html">Accueil</a></li>
             <li><a href="textes.html">Textes</a></li>
             <li><a href="photos.html">Photos</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
         </nav>
         <!-- Ici on placera un bouton pour le menu mobile -->
      </header>
-     
+     <main class="contact-main">
+        <form action="#" class="contact-form" method="#">
+            <div class="form-header">
+                <div class="form-field">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+                <div class="form-field">
+                    <label for="email">Adresse e-mail</label>
+                    <input type="email" id="email" name="email" placeholder="email@exemple.com" required>
+                </div>
+            </div>
+            <div class="form-body">
+                <div class="form-field">
+                    <label for="subject">Objet</label>
+                    <input type="text" id="subject" name="subject" placeholder="Sujet de votre message" required>
+                </div>
+                <div class="form-field">
+                    <label for="message">Votre message</label>
+                    <textarea name="message" id="message" rows="6" placeholder="Écrivez ici..." required></textarea>
+                </div>
+            </div>
+            <div class="form-footer">
+                <div class="form-privacy">
+                    <span class="material-symbols-outlined" style="font-size:16px;">lock</span>
+                    <span class="privacy-text">Vos données sont traitées avec respect et confidentialité.</span>
+                </div>
+                <button class="btn-contact" type="submit">Envoyer le message</button>
+            </div>
+        </form>
+     </main>
      <footer>
         <section class="footer-container">
             <div class="footer-brand">

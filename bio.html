@@ -6,6 +6,7 @@
     <title>Biographie | Alain Girodet</title>
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script src="hamburger.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,19 +14,28 @@
         <nav>
         <a href="index.html" class="nav-logo">Alain Girodet</a>
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Accueil</a></li>
+            <li><a href="index.html">Accueil</a></li>
             <li><a href="textes.html">Textes</a></li>
             <li><a href="photos.html">Photos</a></li>
             <li><a href="contact.html">Contact</a></li>
-        </ul>
+        </ul>       
+        <button class="burger" aria-label="Ouvrir le menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         </nav>
-        <!-- Ici on placera un bouton pour le menu mobile -->
      </header>
      <main class="bio-main">
         <!-- Bannière -->
-        <section class="bio-banniere">
-            <h1>Biographie</h1>
-        </section>
+        <section class="banniere">
+            <div class="banniere-bg">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4y-PMrjDIUsmo3IIZAOV6CEy2C-KTLRE5k8mXPCcuz_3LMNYAhEJ8qdEHpJEamQObJPL2FAiVrssIWZcNnOoqL3kFv3een3a5vevn9mBob8h7SJyf3RRbMleb-d4ZrNBiez46SI3sdSqY0BmllARO5C8wt0CdMWjRinLTSJMgI1vQmVUEMFMWVfT7X7GI3QbwfUYNriWRv0ULCW9K4vyVNWjViwyuVBej_Coh9nJZMULnpCOb_sfbZmhiVgu8bKZD-N38tLpTTPE" alt="Vagues nocturnes"/>
+            </div>
+            <div class="banniere-content">
+                <h1 class="banniere-title">Biographie</h1>
+            </div>
+         </section>
         <!-- Contenu -->
         <section class="bio-container">
             <!-- Sidebar -->
